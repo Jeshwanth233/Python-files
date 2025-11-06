@@ -37,3 +37,22 @@ print(redFun)
 # task
 # names=["Jeshwanth Tuljagari","Ganesh Yadav","Vishal Yadav","Malli Reddy"]
 # o/p=["JT","GY","VY","MR"]
+
+name="Jeshwanth"
+rev=""
+for word in name:
+      rev=word+rev
+print(rev)
+
+names=["Jeshwanth","Sunny","Vishal"]
+li1=[]
+for words in names:
+      rev=""
+      for ch in words:
+            rev=ch+rev
+      li1+=[rev]
+print(li1)
+
+      
+      
+
