@@ -62,4 +62,6 @@ for i in a:
       if i!="_":          #skip the underScore
             str+=i
        
-print(str)           
+print(str)    
+
+print(str)
