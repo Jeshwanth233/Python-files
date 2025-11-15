@@ -48,7 +48,7 @@ for i in a:
       res = i + res
 print(res)"""
 
-a = "_Ajay_Pyhton"
+# a = "_Ajay_Pyhton"
 # str=""
 # for i in a:
 #       if i.isupper():
@@ -57,6 +57,10 @@ a = "_Ajay_Pyhton"
 #             str+=i
 # print(str)
 
+
+"""
+a = "_Ajay_Pyhton"
+
 str=""
 for i in a:
       if i!="_":          #skip the underScore
@@ -64,4 +68,90 @@ for i in a:
        
 print(str)    
 
-print(str)
+print(str)"""
+
+
+"""
+a = "listen" 
+b = "silent" 
+if sorted(a) == sorted(b): 
+      print("Anagram") 
+else: 
+      print("Not Anagram")
+"""
+"""
+j = "PyThOn"
+for i in j:
+      if ord(i)>=65 and ord(i)<=90:
+            d = ord(i)+32
+            print(chr(d))
+      elif ord(i)>=97 and ord(i)<=122:
+            d1 = ord(i)-32
+            print(chr(d1))"""
+
+
+"""
+a = "pytthhon"        #{p:1,y:1,t:1,h:1,o:1,n:1} to find the frequency of a string
+tem={}
+for i in a:
+      if i not in tem:
+            tem[i]=1
+      else:
+            tem[i]+=1
+print(tem)"""
+"""
+a = "listen"
+b = "silent"
+tem={}
+tem1={}
+for i in a:
+      if i not in tem:
+            tem[i]=1
+      else:
+            tem[i]+=1
+for j in b:
+      if j not in tem1:
+            tem1[j]=1
+      else:
+            tem1[j]+=1
+if tem==tem1:
+      print("Anagrame")
+else:
+      print("Not Anagrome")"""
+
+from collections import Counter
+
+a = "listen"
+b = "silent"
+
+if Counter(a)==Counter(b):
+      print("Anagrame")
+else:
+      print("Not Anagrame")
+
+
+h = "sunny@$%123"
+digits=letters=special=0
+for i in h:
+      if i.isalpha():
+            letters+=1
+      elif i.isdigit():
+            digits+=1
+      else:
+            special+=1
+print("alphabets",letters)
+print("numeric",digits)
+print("special",special)
+
+
+a = 5
+b = 10
+
+temp = a
+a = b
+b = temp
+print("a :",a)
+print("b :",b)
+
+      
+
