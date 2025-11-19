@@ -161,7 +161,7 @@ for i in rep:
         if i==j:
             cou+=1
     if cou==1:
-        print(i,end='') """
+        print(i,end='')"""
 
 """s = "pyythoon"
 
@@ -194,12 +194,19 @@ for ch in name:
     else:
         freq[ch] = 1
 print(freq)"""
+
+"""name = "python"
+rep = ""
+for i in name:
+    if i not in rep:
+        rep+=i
+for i in rep:
+    cou = 0
+    for j in name:
+        if i==j:
+            cou+=1
+    print(i,cou)"""
         
-
-
-    
-
-
 # 21. Remove duplicates from a list without using set.
 
 
@@ -207,6 +214,19 @@ print(freq)"""
 
 
 # 23. Find max and min in a list without built-ins.
+
+li1 = [2,6,10,24]
+min = li1[0]
+max = li1[0]
+for i in li1:
+    if min > i:
+        min = i
+    elif max < i:
+        max = i
+
+print(min)
+print(max)
+
 
 
 # 24. Implement binary search.
@@ -228,3 +248,26 @@ print(freq)"""
 
 
 # 30. Generate Fibonacci numbers up to 
+
+name = [1,2,3,4,4,5,5,7]
+freq = []
+for i in name:
+    if i not in freq:
+        freq+=[i]
+uni=[]
+
+for i in freq:
+    count = 0
+    for j in name:
+        if i == j:
+            count+=1
+    if count == 1:
+        uni+=[i]
+    
+
+print("unique: ",uni)
+
+
+
+
+
