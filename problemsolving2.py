@@ -1,4 +1,4 @@
-# 1. Check Even or Odd
+"""# 1. Check Even or Odd
 num = 6
 if num % 2 == 0:
     print("Even number")
@@ -112,4 +112,79 @@ year = 2024
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print("Leap year")
 else:
-    print("Not a leap year")
+    print("Not a leap year")"""
+
+
+# 16. Reverse a string without using built-in methods.
+
+
+"""name = "Jeshwanth"
+rev = ""
+for i in name:
+      rev = i + rev
+print(rev)"""
+
+
+# 17. Check if a number is prime.
+
+"""num = 11
+i = 2
+while num > i:
+    if num%i==0:
+        print("NOT PRIME")
+        break
+    i+=1
+else:
+     print("PRIME")"""
+"""
+num = 7
+cou = 0
+for i in range(1,num):
+    if num%i==0:
+        cou+=1
+if cou==1:
+    print("PRIME")
+else:
+    print("NOT A PRIME")"""
+      
+
+
+
+
+# 18. Return the first non-repeating character in a string.
+
+
+# 19. Find the missing number in a list of 1 to n.
+
+
+# 20. Count frequency of characters in a string.
+
+
+# 21. Remove duplicates from a list without using set.
+
+
+# 22. Write a program to check if two strings are anagrams.
+
+
+# 23. Find max and min in a list without built-ins.
+
+
+# 24. Implement binary search.
+
+
+# 25. Find the second largest number in a list.
+
+
+# 26. Rotate an array by k positions.
+
+
+# 27. Merge two sorted lists into one sorted list.
+
+
+# 28. Implement a stack using two queues.
+
+
+# 29. Detect a palindrome without slicing.
+
+
+# 30. Generate Fibonacci numbers up to 
