@@ -148,16 +148,56 @@ else:
     print("NOT A PRIME")"""
       
 
-
-
-
 # 18. Return the first non-repeating character in a string.
 
+"""name = "pyythhon"
+rep = ""
+for i in name:
+    if i not in rep:
+        rep+=i
+for i in rep:
+    cou = 0
+    for j in name:
+        if i==j:
+            cou+=1
+    if cou==1:
+        print(i,end='') """
+
+"""s = "pyythoon"
+
+freq = {}   # To store frequency of each character
+
+# Count each character
+for ch in s:
+    if ch in freq:
+        freq[ch] += 1
+    else:
+        freq[ch] = 1
+
+# Find the first char with frequency 1
+for ch in s:
+    if freq[ch] == 1:
+        print(ch)
+        """
 
 # 19. Find the missing number in a list of 1 to n.
 
 
 # 20. Count frequency of characters in a string.
+
+"""
+name="sunny"
+freq = {}
+for ch in name:
+    if ch in freq:
+        freq[ch]+=1
+    else:
+        freq[ch] = 1
+print(freq)"""
+        
+
+
+    
 
 
 # 21. Remove duplicates from a list without using set.
