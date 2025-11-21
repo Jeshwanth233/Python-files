@@ -208,13 +208,28 @@ for i in rep:
     print(i,cou)"""
         
 # 21. Remove duplicates from a list without using set.
-
+"""
+li = [1,2,3,3,4,4,5]
+freq=[]
+for i in li:
+    if i not in freq:
+        freq+=[i]
+uni = []
+for x in freq:
+    count = 0
+    for y in li:
+        if x == y:
+            count+=1
+    if count > 1:
+        uni+=[x]
+print(uni)"""
+        
 
 # 22. Write a program to check if two strings are anagrams.
 
 
 # 23. Find max and min in a list without built-ins.
-
+"""
 li1 = [2,6,10,24]
 min = li1[0]
 max = li1[0]
@@ -227,12 +242,35 @@ for i in li1:
 print(min)
 print(max)
 
-
+"""
 
 # 24. Implement binary search.
 
 
 # 25. Find the second largest number in a list.
+
+"""li = [1,22,43,55]
+largest = li[0]
+for i in li:
+      if i > largest:
+            largest = i  
+li.remove(largest)
+sec_large= li[0]
+for i in li:
+      if i > sec_large:
+            sec_large = i
+print(sec_large)"""
+
+# li = [1,22,43,55]
+# largest = li[0]
+# sec=li[0]
+# for i in li:
+#     if i > largest:
+#             sec=largest
+#             largest = i
+#     elif sec>i and i!=largest:
+#           sec=i
+# print(sec)
 
 
 # 26. Rotate an array by k positions.
@@ -246,10 +284,26 @@ print(max)
 
 # 29. Detect a palindrome without slicing.
 
+num = 1221
+temp = num
+rev = 0
+while num>0:
+    digit = num%10
+    rev = digit+rev*10
+    num = num//10
+if temp == rev:
+    print("palindrome")
+else:
+    print("Not a palindrome")
+
+
+
+    
+
 
 # 30. Generate Fibonacci numbers up to 
 
-name = [1,2,3,4,4,5,5,7]
+"""name = [1,2,3,4,4,5,5,7]
 freq = []
 for i in name:
     if i not in freq:
@@ -261,13 +315,21 @@ for i in freq:
     for j in name:
         if i == j:
             count+=1
-    if count == 1:
+    if count > 1:
         uni+=[i]
     
 
-print("unique: ",uni)
+print("unique: ",uni)"""
 
+# name = "jeshwanth"
+# freq={}
+# for ch in name:
+#     if ch in freq:
+#         freq[ch]+=1
+#     else:
+#         freq[ch] = 1
+# print(freq)
 
-
+        
 
 
